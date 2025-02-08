@@ -93,14 +93,17 @@ void List::delete_item()
         {
             cout << i << ": " << list[i] << "\n";
         }
+
+
+        int choice_index;
+        cout << "Select an item index number to delete: \n";
+        cin >> choice_index;
+        list.erase(list.begin()+choice_index);
     }
     else
     {
         cout << "No item in the list to delete\n";
     }
-    int index;
-    cout << "Select an item index number to delete\n";
-    cin >> index;
 
     print_menu();
 }
