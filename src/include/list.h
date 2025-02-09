@@ -1,12 +1,11 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+#include "database.h"
 
 class List
 {
 private:
     /* data */
 public:
+    Database data;
     vector<string> list;
     string name;
     List();

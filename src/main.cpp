@@ -2,11 +2,13 @@
 
 int main(int arg_count, char *args[])
 {
+    List simpleList;
     if(arg_count > 1)
     {
-        List simpleList;
         simpleList.name = string(args[1]);
         simpleList.print_menu();
+        simpleList.data.write(simpleList.list);
+        simpleList.data.read();
     }
     else
     {
