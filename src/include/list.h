@@ -6,6 +6,7 @@ private:
     /* data */
 public:
     Database data;
+    vector<vector<string>> mainList;
     vector<string> list;
     string name;
     List();
@@ -14,4 +15,5 @@ public:
     void print_list();
     void add_item();
     void delete_item();
+    void find_userList();
 };

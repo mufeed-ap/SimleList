@@ -6,9 +6,11 @@ int main(int arg_count, char *args[])
     if(arg_count > 1)
     {
         simpleList.name = string(args[1]);
+        simpleList.mainList = simpleList.data.read();
+        simpleList.find_userList();
         simpleList.print_menu();
-        simpleList.data.write(simpleList.list);
-        simpleList.data.read();
+        simpleList.data.write(simpleList.mainList);
+        
     }
     else
     {

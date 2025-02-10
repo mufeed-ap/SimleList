@@ -8,11 +8,13 @@ class Database
 private:
 public:
 
+    vector<vector<string>> mainList;
+    string name;
 
     Database();
     ~Database();
-    void read();
-    void write(vector<string> list);
+    vector<vector<string>> read();
+    void write(vector<vector<string>> mainList);
 };
 
 
